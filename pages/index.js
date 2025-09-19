@@ -6,13 +6,13 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>IPMARKET.com.au - Online IP Marketplace</title>
+        <title>IPMARKET - Online IP Marketplace</title>
         <meta name="description" content="A proposed online marketplace for intellectual property transactions." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <h1>Welcome to IPMARKET.com.au</h1>
+        <h1>Welcome to IPMARKET</h1>
         <p>Your online marketplace for intellectual property transactions.</p>
         
         <SearchBar />
