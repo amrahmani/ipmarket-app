@@ -1,7 +1,7 @@
 import Layout from '../components/Layout';
 import { useState } from 'react';
 // Netlify Identity library
-import netlifyIdentity from 'netlify-identity-widget'; 
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>; 
 
 export default function Login() {
   const handleLogin = (e) => {
