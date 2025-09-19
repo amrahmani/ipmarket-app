@@ -1,6 +1,10 @@
 import React from 'react';
 
 const SearchBar = () => {
+  const handleSearch = () => {
+    alert('Search button clicked! This is where your search logic will go.');
+  };
+
   return (
     <div className="search-bar-container">
       <input
@@ -8,7 +12,9 @@ const SearchBar = () => {
         placeholder="Search for patents, trademarks, or ideas..."
         className="search-input"
       />
-      <button className="search-button">Search</button>
+      <button className="search-button" onClick={handleSearch}>
+        Search
+      </button>
       <style jsx>{`
         .search-bar-container {
           display: flex;
