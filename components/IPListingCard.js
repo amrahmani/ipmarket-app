@@ -1,6 +1,10 @@
 import React from 'react';
 
 const IPListingCard = ({ title, description, ipType, jurisdiction }) => {
+  const handleInquire = () => {
+    alert(`You are inquiring about: ${title}`);
+  };
+
   return (
     <div className="ip-card">
       <h3 className="ip-title">{title}</h3>
@@ -13,7 +17,9 @@ const IPListingCard = ({ title, description, ipType, jurisdiction }) => {
           <strong>Jurisdiction:</strong> {jurisdiction}
         </p>
       </div>
-      <button className="inquire-button">Inquire</button>
+      <button className="inquire-button" onClick={handleInquire}>
+        Inquire
+      </button>
       <style jsx>{`
         .ip-card {
           border: 1px solid #eaeaea;
