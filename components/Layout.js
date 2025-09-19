@@ -9,9 +9,8 @@ const Layout = ({ children }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header>
-        {/* You can add a navigation bar here */}
         <nav>
-          {/* Add nav links here */}
+          {/* Add nav links here, e.g., to home, login, etc. */}
         </nav>
       </header>
       <main>{children}</main>

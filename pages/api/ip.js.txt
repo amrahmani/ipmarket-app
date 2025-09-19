@@ -1,0 +1,24 @@
+// This is a placeholder for your API route.
+// In a real application, you would connect to your Neon database here.
+
+export default async function handler(req, res) {
+  // Check for the HTTP method
+  if (req.method !== 'GET') {
+    return res.status(405).json({ message: 'Method not allowed' });
+  }
+
+  try {
+    // In a real-world scenario, you would fetch data from your database.
+    // This is a sample array of data to simulate the response.
+    const ipListings = [
+      { id: 1, title: 'AI-Powered IP Valuation Engine', ipType: 'Patent Application' },
+      { id: 2, title: 'Sustainable Packaging Design', ipType: 'Industrial Design' },
+      { id: 3, title: 'Secure Data Encryption Algorithm', ipType: 'Trade Secret' }
+    ];
+
+    res.status(200).json(ipListings);
+  } catch (error) {
+    console.error('Error fetching data:', error);
+    res.status(500).json({ message: 'Internal Server Error' });
+  }
+}
